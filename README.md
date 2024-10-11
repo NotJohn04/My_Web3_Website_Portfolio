@@ -1,3 +1,3 @@
-totally didnt steal the code from someone
+totally didn't use chatgpt to help me build this website
 
 notjohn04.eth.limo
