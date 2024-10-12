@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    letter-spacing: -0.15px; /* Added this line to reduce gap between words */
 }
 
 /* Header section */
@@ -18,13 +19,15 @@ header {
 
 .profile-image {
     border-radius: 50%;
-    width: 90px; /* Made the image smaller */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80px; /* Decreased to 80px */
+    height: auto; /* Ensure aspect ratio is maintained */
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin-top: 6px;
     color: #222;
 }
 
@@ -42,6 +45,17 @@ p {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-me-image {
+    width: 400px; /* Reduced from 500px to 400px */
+    height: 250px; /* Adjusted to maintain aspect ratio (400 * 0.625) */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #007acc;
 }
 
 .about h2 {
@@ -51,6 +65,7 @@ p {
 
 .about p {
     line-height: 1.4;
+    text-align: left;
 }
 
 /* Links section */
@@ -157,7 +172,7 @@ footer {
 
     /* Adjust profile image size */
     .profile-image {
-        width: 100px;
+        width: 70px; /* Slightly smaller for medium screens */
     }
 
     /* Links section */
@@ -171,6 +186,24 @@ footer {
 
     .links a {
         font-size: 0.9rem;
+    }
+
+    .experience h2 {
+        font-size: 1.25rem;
+    }
+
+    .experience-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-item ul li {
+        font-size: 0.9rem;
+    }
+
+    .about-me-image {
+        width: 80%; /* Changed from 90% to 80% */
+        height: auto;
+        max-height: 250px; /* Reduced from 280px to 250px */
     }
 }
 
@@ -204,7 +237,7 @@ footer {
 
     /* Adjust profile image size */
     .profile-image {
-        width: 90px;
+        width: 60px; /* Even smaller for very small screens */
     }
 
     /* Links section */
@@ -224,4 +257,109 @@ footer {
     .footer-text {
         font-size: 0.75rem;
     }
+
+    .experience h2 {
+        font-size: 1.15rem;
+    }
+
+    .experience-item h3 {
+        font-size: 1rem;
+    }
+
+    .experience-item ul li {
+        font-size: 0.85rem;
+    }
+
+    .experience {
+        padding: 15px 10px;
+    }
+
+    .about-me-image {
+        width: 90%; /* Changed from 95% to 90% */
+        max-height: 200px; /* Reduced from 230px to 200px */
+    }
+}
+
+/* Experience Section Styling */
+.experience {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    margin: 10px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #007acc;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+.experience-item ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Experience List Item Styling */
+.experience-item ul li strong {
+    font-weight: 600;
+}
+
+/* Increase space between sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Styling for section headers */
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007acc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add hover effect to the resume button */
+.download-btn:hover {
+    background-color: #005f8a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add subtle shadow to the profile image */
+.profile-image {
+    border-radius: 50%;
+    width: 80px; /* Decreased to 80px */
+    height: auto; /* Ensure aspect ratio is maintained */
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more spacing between experience items */
+.experience-item {
+    margin-bottom: 30px;
+}
+
+/* Add subtle divider between sections */
+.experience-item h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #007acc;
 }
